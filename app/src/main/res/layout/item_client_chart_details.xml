@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="clientChartTaskBean"
+            type="com.velozion.myoitc.bean.ClientChartTaskListBean" />
+    </data>
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:elevation="@dimen/_4sdp"
+            app:cardCornerRadius="@dimen/_5sdp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp">
+
+                <TextView
+                    android:id="@+id/clntTaskName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:drawableStart="@drawable/ic_svg_services_type_16"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:textColor="@color/txt_color"
+                    android:textSize="@dimen/_12sdp" />
+
+
+                <TextView
+                    android:id="@+id/clntStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:drawableStart="@drawable/ic_svg_business_16"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:textColor="@color/txt_color"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:id="@+id/clntasssignedTo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:drawableStart="@drawable/ic_svg_clients_16"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:textColor="@color/txt_color"
+                    android:textSize="@dimen/_10sdp" />
+
+                <!-- <TextView
+                     android:id="@+id/ckntTaskAssgned"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginStart="@dimen/_65sdp"
+                     android:layout_marginTop="@dimen/_50sdp"
+                     android:text="@{clientChartBean.clientName}"
+                     android:textSize="@dimen/_10sdp" />
+
+                 <ImageView
+                     android:id="@+id/clntTaskStatus"
+                     android:layout_width="@dimen/_20sdp"
+                     android:layout_height="@dimen/_20sdp"
+                     android:layout_marginStart="@dimen/_250sdp"
+                     android:layout_marginTop="@dimen/_20sdp"
+                     android:src="@drawable/ic_svg_clients" />-->
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/cntTaskDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_225sdp"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:drawablePadding="@dimen/_5sdp"
+                android:textColor="@color/txt_color"
+                android:textSize="@dimen/_10sdp" />
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</layout>

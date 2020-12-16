@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+
+    <item
+        android:id="@+id/nav_tm"
+        android:icon="@drawable/ic_svg_task_management"
+        app:itemTextAppearance="@style/ToolBarText"
+        android:title="@string/nav_taskmanagemnt" />
+
+    <item
+        android:id="@+id/nav_timesheet"
+        android:icon="@drawable/ic_svg_time_sheet"
+        app:itemTextAppearance="@style/ToolBarText"
+        android:title="@string/nav_timesheet" />
+
+    <item
+        android:id="@+id/nav_client_cart"
+        android:icon="@drawable/ic_svg_business"
+        app:itemTextAppearance="@style/ToolBarText"
+        android:title="@string/nav_client_cart" />
+
+    <item
+        android:id="@+id/nav_checkin"
+        android:icon="@drawable/ic_svg_map"
+        app:itemTextAppearance="@style/ToolBarText"
+        android:title="@string/nav_checkin" />
+
+    <item
+        android:id="@+id/nav_absent_tracker"
+        android:icon="@drawable/ic_svg_calendar"
+        app:itemTextAppearance="@style/ToolBarText"
+        android:title="@string/nav_absent_tracker" />
+
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_svg_clients"
+        app:itemTextAppearance="@style/ToolBarText"
+        android:title="@string/nav_profile" />
+
+    <item
+        android:id="@+id/nav_request_list"
+        android:icon="@drawable/ic_svg_business"
+        app:itemTextAppearance="@style/ToolBarText"
+        android:title="@string/nav_request_list" />
+
+    <item
+        android:id="@+id/nav_choose_package"
+        android:icon="@drawable/ic_package1"
+        app:itemTextAppearance="@style/ToolBarText"
+        android:title="@string/nav_choose_pack" />
+
+    <item
+        android:id="@+id/nav_travel_map"
+        android:icon="@drawable/ic_svg_map"
+        app:itemTextAppearance="@style/ToolBarText"
+        android:title="@string/nav_travel_amp" />
+
+
+    <item android:title="@string/communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                app:itemTextAppearance="@style/ToolBarText"
+                android:title="@string/menu_share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                app:itemTextAppearance="@style/ToolBarText"
+                android:title="@string/menu_send" />
+        </menu>
+    </item>
+
+</menu>

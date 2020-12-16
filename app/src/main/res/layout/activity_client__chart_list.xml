@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="clientChartBean"
+            type="com.velozion.myoitc.bean.ClientChartBean" />
+
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv_client_chart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/placeholder_bg" />
+    </LinearLayout>
+</layout>

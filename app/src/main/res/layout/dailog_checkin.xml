@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/_10sdp">
+
+
+    <Spinner
+        android:id="@+id/client_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:background="@drawable/spinner_background"
+        android:minHeight="@dimen/_35sdp"
+        android:spinnerMode="dialog" />
+
+
+    <Spinner
+        android:id="@+id/lunch_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:background="@drawable/spinner_background"
+        android:minHeight="@dimen/_35sdp"
+        android:spinnerMode="dialog" />
+
+
+    <Spinner
+        android:id="@+id/paycode_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:visibility="gone"
+        android:background="@drawable/spinner_background"
+        android:minHeight="@dimen/_35sdp"
+        android:spinnerMode="dialog" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:visibility="gone"
+        android:hint="@string/client_initial"
+        android:textAppearance="@style/ToolBarText">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/client_initial"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:inputType="textCapWords"
+            android:textAppearance="@style/ToolBarText"
+            android:textSize="@dimen/_12sdp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/services_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:background="@drawable/spinner_background"
+        android:minHeight="@dimen/_35sdp"
+        android:spinnerMode="dialog" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_2sdp"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg"
+            android:gravity="center"
+            android:padding="@dimen/_8sdp"
+            android:text="@string/cancel"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp" />
+
+        <TextView
+            android:id="@+id/submit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_2sdp"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg"
+            android:gravity="center"
+            android:padding="@dimen/_8sdp"
+            android:text="@string/submit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

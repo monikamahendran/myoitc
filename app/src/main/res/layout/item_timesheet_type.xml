@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="TimeSheetType"
+            type="com.velozion.myoitc.bean.TimeSheetTypeModel" />
+
+    </data>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="@dimen/_5sdp"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/type_name"
+        android:text="@{TimeSheetType.name}"
+        android:layout_margin="@dimen/_3sdp"
+        android:textColor="#1A237E"
+        android:background="@drawable/button_bg_2"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
+</layout>

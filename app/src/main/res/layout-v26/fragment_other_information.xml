@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Other Informations"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_20sdp"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/spinner_physician"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:autofillHints="START OF THE CARE DATE"
+                android:background="@drawable/spinner_corner"
+                android:spinnerMode="dialog" />
+
+            <Spinner
+                android:id="@+id/spinner_primary_diagnosis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/spinner_corner"
+
+                android:spinnerMode="dialog" />
+
+            <Spinner
+                android:id="@+id/spinner_secondary_diagnosis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/spinner_corner"
+                android:spinnerMode="dialog" />
+
+            <Spinner
+                android:id="@+id/spinner_otherDiagnosis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/spinner_corner"
+                android:spinnerMode="dialog" />
+
+            <Spinner
+                android:id="@+id/spinner_maritalStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/spinner_corner"
+                android:spinnerMode="dialog" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
